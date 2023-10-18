@@ -23,11 +23,13 @@ class HomeMediumPage extends StatelessWidget {
                   child: Image.asset(
                     "assets/images/medium.png",
                     width: 240,
+                    key: const ValueKey("imageMedium"),
                   ),
                 ),
               ),
               const Text(
                 "Join Medium.",
+                key: ValueKey("textTitle"),
                 style: TextStyle(
                   fontSize: 44,
                 ),
@@ -36,6 +38,7 @@ class HomeMediumPage extends StatelessWidget {
               const SocialButton(
                 asset: "assets/images/google.png",
                 text: "Sign up with Google",
+                key: ValueKey("signupGoogle"),
               ),
               const SizedBox(
                 height: 15,
@@ -43,12 +46,14 @@ class HomeMediumPage extends StatelessWidget {
               const SocialButton(
                 asset: "assets/images/email.png",
                 text: "Sign up with Email",
+                key: ValueKey("signupEmail"),
               ),
               const SizedBox(height: 40),
               const Row(
                 children: [
                   Expanded(
                     child: Divider(
+                      key: ValueKey("dividerLeft"),
                       thickness: 1,
                       color: Colors.black,
                     ),
@@ -62,6 +67,7 @@ class HomeMediumPage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Divider(
+                      key: ValueKey("dividerRight"),
                       thickness: 1,
                       color: Colors.black,
                     ),
@@ -72,6 +78,7 @@ class HomeMediumPage extends StatelessWidget {
                 height: 40,
               ),
               const CircleSocialButton(
+                key: ValueKey("buttonFacebook"),
                 asset: "assets/images/facebook.png",
               ),
               const SizedBox(
